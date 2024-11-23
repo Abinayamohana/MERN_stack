@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice_Format</title>
+    <style>
+        .invoice {
+            max-width: 800px;
+            margin: 20px auto;
+            padding-top: 10px;
+            border: 2px solid black;
+
+        }
+
+        .invoice-header td {
+            text-align: center;
+
+        }
+
+        .align-center {
+            text-align: center;
+
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+        .invoice-body th,td {
+            padding: 10px;
+
+        }
+
+        .invoice-details{
+            padding-bottom: 20px;
+        }
+        
+    </style>
+    
+</head>
+
+<body>
+    <div class="invoice">
+        <div class="invoice-header">
+            <table width="100%" cellspacing="0.5">
+                <tr>
+                    <td rowspan="4"><img src="img/d1.jpg" alt=""></td>
+                    <td style="font-size: 50px;"><b>ULTIMATE AUTOS</b></td>
+                </tr>
+                <tr>
+                    <td>PLOT NO.26, FOCAL POINT</td>
+                </tr>
+                <tr>
+                    <td>LUDHIANA</td>
+                </tr>
+                <tr>
+                    <td>939194349,6543821379</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="invoice-body">
+            <table border="1px" cellpadding="6" cellspacing="0.5" width="100%" margin-bottom="0px">
+
+                <thead>
+                    <tr>
+                        <td colspan="3" class="align-center"><b>RETAIL INVOICE</b></td>
+                        <td colspan="3" class="align-center"><b>Original For Buyer</b></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3" rowspan="2" style="padding-top: 1px;">Ms<br>Abinaya</td>
+                        <td colspan="2" style="padding: 10px;">INVOICE NO RI-1</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding: 10px;">DATE 15-Nov-2024</td>
+                    </tr>
+                    <tr class="invoice-title">
+                        <th>Sr.No</th>
+                        <th>DESCRIPTION</th>
+                        <th>QUANTITY <br> (pos./Mbrs)</th>
+                        <th>RATE</th>
+                        <th>AMOUNT</th>
+                    </tr>
+                    <tr>
+                        <td class="align-center" style="align-content: start;">1</td>
+                        <td class="invoice-details">
+                            <strong>PASSION PLUS MOTORCYCLE</strong> <br>
+                            Chassis No: DK5K299307,<br>
+                            Engine No: EN29914877,<br>
+                            Battery No: B29385526,<br>
+                            Key No: 1411,<br>
+                            Book No: 204,<br>
+                            Model: 2012,<br>
+                            Color: RED,<br>
+                            Temp. No: PB10CJ-9926.
+                        <td class="align-center" style="align-content: start;">1</td>
+                        <td class="align-right" style="align-content: start;">43956.04</td>
+                        <td class="align-right" style="align-content: start;">43956.04</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="2" class="align-center">Payment Terms: By Cash or DD</td>
+                        <td class="align-center" style=>1</td>
+                        <td></td>
+                        <td class="align-right">43956.04</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">GST AMOUNT</td>
+                        <td class="align-right">5494.50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td colspan="2">Surcharge</td>
+                        <td class="align-right">549.45</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Rupees Fifty Thousand Only</td>
+                        <td class="align-right">&#8377; 50000.00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <div class="invoice-footer">
+            <table margin-top="0px" width="100%" cellpadding="8px">
+               
+                <tr>
+                    <td>Subject to Ludhiana Jurisdiction only.</td>
+                    <td rowspan="2">For <b>ULTIMATE AUTOS</b></td>
+                </tr>
+                <tr>
+                    <td>Payment by account payee cheque draft only.</td>
+                </tr>
+                <tr>
+                    <td>Goods once sold will not be taken back.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Interest 18% will be charged after due date.</td>
+                    <td>Authorised Signatory</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
