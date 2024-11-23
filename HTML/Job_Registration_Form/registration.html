@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" href="img/p1.png">
+    <link rel="stylesheet" href="style.css">
+    <!--icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!--div tag, 
+     nav tag,
+     anchor tag,
+     list.   
+     -->
+    <nav class="menu_bar">
+        <div class="logo"><img src="img/logo.png" alt=""
+                style="width: 20px;height: 20px;padding-left:150px;padding-top: 20px;"><br>
+            <label for="logoname" style="padding-left: 100px;font-size: 30px;font-weight: bold;">accenture</label>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li>
+                <a href="#">&#9776</a>  <!--Menu icon entity-->
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="#nav1" style="color: white;">Job Details</a></li>
+                        <li><a href="#nav2" style="color: white;">Personal Details</a></li>
+                        <li><a href="#nav3" style="color: white;">Address Details</a></li>
+                        <li><a href="#nav4" style="color: white;">Education Details</a></li>
+                        <li><a href="#nav5" style="color: white;">Attachments</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="content">
+
+        <div class="body">
+            <center>
+                <a href="" class="assistance">Click here if you need any assistance on the Registration Form</a>
+            </center>
+            <h1>Registration Form</h1>
+
+        <!--form tag-->
+            <form action="" style="background-color: rgb(217, 214, 214);padding: 10px;">
+
+            <!--fieldset tag-->
+                <fieldset class="jobrole" id="nav1">
+
+             <!--legend tag-->
+                    <legend>Job Details</legend>
+
+             <!--label tag ,input tag-->
+                    <label for="Job Role" class="title">Job Role</label><br>
+                    <label for="Packaged App Development Associate"><input type="text" id="jobrole"
+                            value="Packaged App Development Associate" readonly
+                            style="width: 350px;padding:10px;color: darkslategray;"></label><br>
+                    <label for=""><a href="" style="font-size: 15px;">View Job Description</a></label>
+                </fieldset>
+                <fieldset class="personaldetails" id="nav2">
+                    <legend>Personal Details</legend>
+            <!--Superscript text-->        
+                    <label for="First Name" class="title">First Name <sup style="color:red ;">*</sup> </label><br>
+                    <label for=""><input type="text" id="FirstName" placeholder="First Name" required
+                            style="width: 80%;padding:10px;"></label><br>
+                    <label for="">Please enter your name as mentioned in your PAN card</label><br><br>
+
+                    <label for="Last Name" class="title">Last Name <sup style="color:red ;">*</sup></label><br>
+                    <label for=""><input type="text" id="Lastname" placeholder="Last Name"
+                            style="width: 80%;padding:10px;"></label><br>
+                    <label for="">In case you don't have last name, kindly mention your Father/Mother's name as
+                        specified in PAN card, tool will not consider single alphabet as last name</label><br><br>
+
+                    <label for="regno" class="title">University Registration No. <sup
+                            style="color:red ;">*</sup></label><br>
+                    <label for=""><input type="text" id="regno" placeholder="University Registration No."
+                            style="width: 80%;padding:10px;"></label><br><br>
+
+                    <label for="email" class="title">Email ID <sup style="color:red ;">*</sup></label><br>
+                    <label for=""><input type="email" id="email" placeholder="Email ID"
+                            style="width: 80%;padding:10px;"></label><br>
+                    <label for="">Enter your personal Email ID which will be used for all future notifications. No
+                        changes will be permitted post submission</label><br><br>
+
+                    <label for="number" class="title">Primary Contact Number <sup
+                            style="color:red ;">*</sup></label><br>
+                    <label for=""><input type="number" id="number" placeholder="Primary Contact Number"
+                            style="width: 80%;padding:10px;"></label><br>
+                    <label for="">Enter your personal contact number which will be used for all future notifications. No
+                        changes will be permitted post submission</label><br><br>
+
+                    <label for="WhatsApp" class="title">WhatsApp Consent <sup style="color:red ;">*</sup></label><br>
+
+             <!--select & option tag-->
+                    <select id="WhatsApp" style="width: 80%;padding:10px;">
+                        <option value="select">--select--</option>
+                        <option value="yes">Yes, I consent</option>
+                        <option value="no">No, I do not consent</option>
+                    </select><br>
+
+                    <label for="">If you consent, In case you do not give Consent, you will not receive any WhatsApp
+                        Notification from Accenture.</label><br><br>
+           <!--input type date--> 
+                    <label for="DOB" class="title">Date Of Birth - (DD/MM/YYYY)<sup style="color:red ;">*</sup>
+                    </label><br>
+                    <label for=""><input type="date" id="DOB" placeholder="Date Of Birth - (DD/MM/YYYY)" required
+                            style="width: 80%;padding:10px;"></label><br>
+                    <label for="">Please enter your name as mentioned in your PAN card</label><br><br>
+
+          <!--radio-->
+                    <label for="Gender" class="title">Gender<sup style="color:red ;">*</sup> </label><br>
+                    <input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">Female
+                    <input type="radio" name="Gender">Other
+                </fieldset>
+            </form>
+
+            <fieldset class="addressdetails" id="nav3">
+                <legend>Address Details</legend>
+                <form action="">
+             <!--table tag-->
+                    <table style="width: 100%;padding:10px; background-color:rgb(217, 214, 214);">
+                        <tr>
+                            <td>Address Line <sup style="color:red ;">*</sup></td>
+                            <td><input type="text" id="Address" placeholder="Address Line" required
+                                    style="width: 80%;padding:10px;"></td>
+                        </tr>
+                        <tr>
+                            <td>Pincode<sup style="color:red ;">*</sup></td>
+                            <td><input type="text" id="Pincode" placeholder="Pincode" required
+                                    style="width: 80%;padding:10px;"></td>
+                        </tr>
+                        <tr>
+                            <td>City <sup style="color:red ;">*</sup></td>
+                            <td><input type="text" id="City" placeholder="City" required
+                                    style="width: 80%;padding:10px;"></td>
+                        </tr>
+                        <tr>
+                            <td>State <sup style="color:red ;">*</sup></td>
+                            <td><input type="text" id="State" placeholder="State" required
+                                    style="width: 80%;padding:10px;"></td>
+                        </tr>
+                        <tr>
+                            <td>Country <sup style="color:red ;">*</sup></td>
+                            <td><input type="text" id="Country" placeholder="Country" required
+                                    style="width: 80%;padding:10px;"></td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+
+            <form action="" style="background-color:rgb(217, 214, 214);padding: 10px;">
+                <fieldset class="educationdetails" id="nav4">
+                    <legend>Education Details <sup style="color:red ;">*</sup></legend>
+                    <label for="" class="title">Education Type</label><br>
+                    <select id="Education" style="width: 80%;padding:10px;">
+                        <option value="select">--select--</option>
+                        <option value="pg">Post Graduate / Dual Degree</option>
+                        <option value="ug">under Graduate</option>
+                    </select><br><br>
+
+                    <label for="" class="title">Degree</label><br>
+                    <select id="Degree" style="width: 80%;padding:10px;">
+                        <option value="select">--select--</option>
+                        <option value="BA">Bachelor of Arts (BA)</option>
+                        <option value="BCS">Bachelor of Computer Science (BCS)</option>
+                        <option value="BSc">Bachelor of Science (BSc)</option>
+                        <option value="BBA">Bachelor of Business Administration (BBA)</option>
+                        <option value="B.FA">Bachelor of Fine Arts (B.FA)</option>
+                        <option value="BSc">Bachelor of Science (BSc)</option>
+                        <option value="B.Com">B.Com</option>
+                    </select><br><br>
+
+                    <label for="" class="title">Branch</label><br>
+                    <select id="Branch" style="width: 80%;padding:10px;">
+                        <option value="select">--select--</option>
+                        <option value="CT">Computer Technology</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="AI">Artificial Intelligence</option>
+                        <option value="CA">Computer Application</option>
+                        <option value="FT">Food Technology</option>
+                        <option value="SC">Computer Science</option>
+                        <option value="ML">Machine Learning</option>
+                    </select><br><br>
+
+                    <label for="College" class="title">College</label><br>
+                    <label for=""><input type="text" id="College" placeholder="College"
+                            style="width: 80%;padding:10px;"></label><br><br>
+                    <label for="duration" class="title">Starting month and year</label><br>
+
+                    <label for=""><input type="month" id="duration" placeholder="Starting month and year "
+                            style="width: 80%;padding:10px;"></label><br><br>
+                    <label for="cgpa" class="title">CGPA</label><br>
+                    <label for="cgpa"><input type="text" id="College" placeholder="CGPA"
+                            style="width: 80%;padding:10px;"></label><br><br>
+                </fieldset>
+            </form>
+            <form action="" style="background-color: rgb(217, 214, 214);padding: 10px;">
+                <fieldset class="attachments" id="nav5">
+                    <legend>Attachments</legend>
+        <!--input type file
+            accept
+        -->
+                    <label for="" class="title">Resume/CV <sup style="color: red;">*</sup>(Supported Format:
+                        .doc/.docx/.pdf; Max
+                        size: 1 MB)</label><br><br>
+                    <label for=""><input type="file" id="resume" name="resume" accept=".doc,.docx,.pdf"></label><br><br>
+
+                    <label for="" class="title">Passport size photograph <sup style="color: red;">*</sup>(Supported
+                        Format: jpg, jpeg,
+                        png.; Max size: 3 MB) Uploaded passport size photograph should be latest (Not older than 2
+                        months)</label><br><br>
+                    <label for=""><input type="file" id="photo" name="photo" accept=".jpg,.jpeg,.png"></label><br><br>
+                </fieldset>
+
+            </form>
+        </div>
+        <form action="">
+            <input type="Submit" value="Register" class="submit">
+        </form>
+
+    </div>
+    <div class="footer" style="text-align: center;">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a><br><br>
+        <label for="careers" style="padding: 15px;">Careers</label>
+        <label for="privacy" style="padding: 15px;">Privacy Statement</label>
+        <label for="terms" style="padding: 15px;">Terms of use</label><br><br>
+        <label for="">
+            <p style="font-size: 15px;color: gray;">By using this site you agree that we can place cookies on your
+                device. See Privacy Statement for details.</p>
+        </label>
+        <label for="">
+            <p style="font-size: 15px;color: gray;">© 2015 Accenture. All Rights Reserved.</p>
+        </label>
+
+    </div>
+
+</body>
+
+</html>

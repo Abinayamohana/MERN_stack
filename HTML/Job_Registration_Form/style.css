@@ -1,0 +1,147 @@
+.menu_bar{
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: o.5%;
+}
+.menu_bar ul{
+  list-style: none;
+  display: flex;
+}
+.menu_bar ul li{
+  padding: 10px 30px;
+  position: relative;
+}
+.menu_bar ul li a{
+  color:  rgb(223, 27, 223);
+  text-decoration: none;
+  font-size: 20px;
+  transition: all o.3s;
+}
+.menu_bar ul li a:hover{
+  color: white;
+}
+.dropdown_menu{
+  display: none;
+  
+}
+.menu_bar ul li:hover .dropdown_menu{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: black;  
+
+}
+.dropdown_menu ul{
+  display: block;
+  margin: 10px;
+}
+.dropdown_menu ul li{
+  width: 150px;
+  padding: 10px;
+}
+.dropdown_menu ul li a:hover{
+  color:rgb(223, 27, 223) ;
+}
+
+
+
+
+
+
+
+.content {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 20px;
+}
+
+.assistance {
+  color: rgb(223, 27, 223);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman';
+  margin-bottom: 10px;
+}
+
+.jobrole {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.addressdetails {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.submit {
+  margin: 20px;
+  width: 15% ;
+  height: 50px;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: bold;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+}
+
+.title {
+  color: darkslategrey;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 80px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
