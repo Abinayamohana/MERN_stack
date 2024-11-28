@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        
+
+
+</head>
+
+<body background="img/room.jpg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Grand Courtyard</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="user.html" class="nav-item nav-link">User</a>
+                    <a href="hotel.html" class="nav-item nav-link">Hotel</a>
+                    <a href="room.html" class="nav-item nav-link">Room</a>
+                    <a href="booking.html" class="nav-item nav-link">Booking</a>
+                    <a href="review.html" class="nav-item nav-link">Review</a>
+                    <a href="payment.html" class="nav-item nav-link">Payment</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link">Login</a>
+                    <a href="#" class="nav-item nav-link">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="pt-3">
+        <center>
+        <h1>Room Details</h1>
+    </center>
+    </div>
+
+    <div class="container">
+        <div class="mb-4 col-6">
+            <label for="roomid" class="form-label">RoomID</label>
+            <input type="number" class="form-control" id="roomid" placeholder="RoomID">
+        </div>
+
+        <div class="mb-4 col-6">
+            <label for="hotelid" class="form-label">HotelID</label>
+            <input type="number" class="form-control" id="hotelid" placeholder="HotelID">
+        </div>
+        <div class="mb-4 col-6">
+            <label for="RoomType" class="form-label">RoomType</label>
+            <input type="text" class="form-control" id="RoomType" placeholder="RoomType">
+        </div>
+        <div class="mb-4 col-6">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" class="form-control" id="price" placeholder="Price">
+        </div>
+
+        <div class="mb-4">
+            <label for="availablity" class="form-label">Availablity</label><br>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Available
+            </label>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Not Available
+            </label>
+        </div>
+        <div class="mb-4">
+            <label for="features" class="form-label">Features</label>
+            <textarea class="form-control w-50 p-3" id="features" rows="3"></textarea>
+        </div>
+        <div>
+            <form action="">
+               <center>
+                <button class="mb-5"><a href="booking.html" style="text-decoration: none;">Next Page</a></button>
+            
+            </center>
+        </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
