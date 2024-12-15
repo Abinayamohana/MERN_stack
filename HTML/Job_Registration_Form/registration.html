@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" href="img/p1.png">
+    <link rel="stylesheet" href="style.css">
+    <!--icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-color:rgb(217, 214, 214);">
+
+    <!--div tag, 
+     nav tag,
+     anchor tag,
+     list.   
+     -->
+
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo.png" alt="Logo" style="width: 30px; height: 30px;" class="me-2">
+                <span style="font-size: 30px; font-weight: bold;">accenture</span>
+            </a>
+            <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-magenta" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-magenta" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-magenta" href="#footer">Contact Us</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-magenta" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            &#9776;
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-white" href="#nav1">Job Details</a></li>
+                            <li><a class="dropdown-item text-white" href="#nav2">Personal Details</a></li>
+                            <li><a class="dropdown-item text-white" href="#nav3">Address Details</a></li>
+                            <li><a class="dropdown-item text-white" href="#nav4">Education Details</a></li>
+                            <li><a class="dropdown-item text-white" href="#nav5">Attachments</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content mt-0 pt-0">
+
+        <center>
+            <a href="" class="assistance">Click here if you need any assistance on the Registration Form</a>
+        </center> <br>
+
+        <form id="jobForm" onsubmit="return validateForm(event)"
+            style="background-color:rgb(217, 214, 214);padding: 10px;">
+            <h3>Registration Form</h3><br>
+            <!--fieldset tag-->
+            <fieldset class="jobrole" id="nav1">
+
+                <!--legend tag-->
+                <legend>Job Details</legend>
+
+                <!--label tag ,input tag-->
+                <label for="Job Role" class="form-label title">Job Role</label><br>
+                <input type="text" id="jobrole" class="form-control" value="Packaged App Development Associate" readonly class="form-control"
+                    style="color: darkslategray;">
+                <label for=""><a href="" style="font-size: 15px;">View Job Description</a></label>
+            </fieldset>
+            <fieldset class="personaldetails" id="nav2">
+                <legend>Personal Details</legend>
+                <!--Superscript text-->
+                <div class="mb-3">
+                    <label for="fname" class="form-label title">First Name <sup style="color:red ;">*</sup></label>
+                    <input type="text" id="fname" class="form-control" name="fname" placeholder="First Name">
+
+                    <small class="form-text text-muted">The first letter must be uppercase, followed by lowercase
+                        letters, with at least 2 characters total.</small>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Last Name" class="form-label title">Last Name <sup
+                            style="color:red ;">*</sup></label><br>
+                    <input type="text" class="form-control" id="lname" placeholder="Last Name" maxlength="50">
+                    <small class="form-text text-muted">In case you don't have last name, kindly mention your
+                        Father/Mother's name as
+                        specified in PAN card, tool will not consider single alphabet as last name</small>
+                </div>
+
+                <div class="mb-3">
+                    <label for="regno" class="form-label title">University Registration No. <sup
+                            style="color:red ;">*</sup></label><br>
+                    <input type="text" class="form-control" id="regno" placeholder="University Registration No.">
+                    <small class="form-text text-muted">Please enter a valid University Registration Number (e.g.,
+                        2026AB01).</small>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label title" name="email">Email ID <sup
+                            style="color:red ;">*</sup></label><br>
+                    <input type="email" class="form-control" id="email" placeholder="Email ID">
+                    <small class="form-text text-muted">Enter your personal Email ID which will be used for all
+                        future notifications. No
+                        changes will be permitted post submission</small>
+                </div>
+
+                <div class="mb-3">
+                    <label for="number" class="form-label title">Primary Contact Number <sup
+                            style="color:red ;">*</sup></label><br>
+                    <input type="text" class="form-control" id="number" placeholder="Primary Contact Number">
+
+                    <small class="form-text text-muted"> Enter your personal contact number which will be used for
+                        all future notifications. No changes will be permitted post submission</small>
+                </div>
+                <div class="mb-3">
+                    <label for="WhatsApp" class="form-label title">WhatsApp Consent <sup
+                            style="color:red ;">*</sup></label><br>
+
+                    <!--select & option tag-->
+                    <select id="WhatsApp" class="form-select">
+                        <option value="select">--select--</option>
+                        <option value="yes">Yes, I consent</option>
+                        <option value="no">No, I do not consent</option>
+                    </select>
+
+                    <small class="form-text text-muted">If you consent, In case you do not give Consent, you will
+                        not receive any
+                        WhatsApp Notification from Accenture.</small>
+                </div>
+
+                <!--input type date-->
+                <div class="mb-3">
+                    <label for="DOB" class="title form-label">Date Of Birth - (DD/MM/YYYY)<sup
+                            style="color:red ;">*</sup>
+                    </label><br>
+                    <input type="date" class="form-control" id="DOB" placeholder="Date Of Birth - (DD/MM/YYYY)">
+
+                    <small class="form-text text-muted">Please enter your name as mentioned in your PAN card</small>
+                </div>
+                <!--radio-->
+                <div class="mb-3">
+                    <label for="Gender" class="title">Gender<sup style="color:red ;">*</sup> </label><br>
+                    <input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">Female
+                    <input type="radio" name="Gender">Other
+                </div>
+            </fieldset>
+
+
+            <fieldset class="addressdetails" id="nav3">
+                <legend>Address Details</legend>
+                <!--table tag-->
+                <table style="width: 100%;padding:10px; background-color:rgb(217, 214, 214);">
+                    <tr>
+                        <td>Address Line</td>
+                        <td><input type="text" id="Address" placeholder="Address Line" style="width: 80%;padding:10px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pincode</td>
+                        <td><input type="text" id="Pincode" placeholder="Pincode" style="width: 80%;padding:10px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td><input type="text" id="City" placeholder="City" style="width: 80%;padding:10px;"></td>
+                    </tr>
+                    <tr>
+                        <td>State</td>
+                        <td><input type="text" id="State" placeholder="State" style="width: 80%;padding:10px;"></td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td><input type="text" id="Country" placeholder="Country" style="width: 80%;padding:10px;">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset class="educationdetails" id="nav4">
+                <legend>Education Details</legend>
+                <label for="" class="form-label title">Education Type</label><br>
+                <select id="Education" class="form-select">
+                    <option value="select">--select--</option>
+                    <option value="pg">Post Graduate / Dual Degree</option>
+                    <option value="ug">Under Graduate</option>
+                </select><br><br>
+
+                <label for="" class="form-label title">Degree</label><br>
+                <select id="Degree" class="form-select">
+                    <option value="select">--select--</option>
+                    <option value="BA">Bachelor of Arts (BA)</option>
+                    <option value="BCS">Bachelor of Computer Science (BCS)</option>
+                    <option value="BSc">Bachelor of Science (BSc)</option>
+                    <option value="BBA">Bachelor of Business Administration (BBA)</option>
+                    <option value="B.FA">Bachelor of Fine Arts (B.FA)</option>
+                    <option value="BSc">Bachelor of Science (BSc)</option>
+                    <option value="B.Com">B.Com</option>
+                </select><br><br>
+
+                <label for="" class="form-label title">Branch</label><br>
+                <select id="Branch" class="form-select">
+                    <option value="select">--select--</option>
+                    <option value="CT">Computer Technology</option>
+                    <option value="IT">Information Technology</option>
+                    <option value="AI">Artificial Intelligence</option>
+                    <option value="CA">Computer Application</option>
+                    <option value="FT">Food Technology</option>
+                    <option value="SC">Computer Science</option>
+                    <option value="ML">Machine Learning</option>
+                </select><br><br>
+                <div class="mb-3">
+                    <label for="College" class="title form-label">College</label><br>
+                    <input type="text" id="College" class="form-control" placeholder="College">
+                </div>
+                <div class="mb-3">
+                    <label for="duration" class="form-label title">Starting month and year</label><br>
+
+                    <input type="month" id="duration" class="form-control" placeholder="Starting month and year ">
+                </div>
+                <div class="mb-3">
+                    <label for="cgpa" class="form-label title">CGPA</label><br>
+                    <input type="text" class="form-control" id="College" placeholder="CGPA">
+                </div>
+            </fieldset>
+
+            <fieldset class="attachments" id="nav5">
+                <legend>Attachments</legend>
+                <!--input type file accept-->
+
+                <label for="" class="title">Resume/CV <sup style="color: red;">*</sup>(Supported Format:
+                    .doc/.docx/.pdf; Max
+                    size: 1 MB)</label><br><br>
+                <label for=""><input type="file" id="resume" name="resume" accept=".doc,.docx,.pdf"></label><br><br>
+
+                <label for="" class="title">Passport size photograph <sup style="color: red;">*</sup>(Supported
+                    Format: jpg, jpeg,
+                    png.; Max size: 3 MB) Uploaded passport size photograph should be latest (Not older than 2
+                    months)</label><br><br>
+                <label for=""><input type="file" id="photo" name="photo" accept=".jpg,.jpeg,.png"></label><br><br>
+            </fieldset>
+
+            <div class="mx-auto mt-3" style="width: 200px;">
+                <button type="submit" class="btn py-2 px-3"
+                    style="font-weight: bold;font-size: 15px;background-color: white;">Register</button>
+            </div>
+
+        </form>
+        
+        <!-- Success Message (Hidden initially) -->
+        <div id="successMessage" style="display: none;">
+            <h3>Confirmation</h3>
+            <p id="date"></p><br>
+            <h2 id="res"></h2><br>
+            <p>Thank you for your interest in pursuing a career in Accenture.</p>
+            <p>Your form has been successfully submitted. We will get in touch with you soon.</p>
+            <p>Kindly await further information from us on your candidature.</p>
+            <p>All the best!</p><br>
+            <button onclick="goBack()" class="btn" style="font-weight: bold;">Go Back</button>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer" id="footer" style="text-align: center;"><br>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a><br>
+        <label for="careers" style="padding: 15px;">Careers</label>
+        <label for="privacy" style="padding: 15px;">Privacy Statement</label>
+        <label for="terms" style="padding: 15px;">Terms of use</label><br><br>
+        <label for="">
+            <p style="font-size: 15px;color: gray;">By using this site you agree that we can place cookies on your
+                device. See Privacy Statement for details.</p>
+        </label>
+        <label for="">
+            <p style="font-size: 15px;color: gray;">© 2015 Accenture. All Rights Reserved.</p>
+        </label>
+
+    </div>
+
+
+
+
+    <script>
+        //script
+        function validateForm(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var regno = document.getElementById("regno").value;
+            var email = document.getElementById("email").value.indexOf("@");
+            var number = document.getElementById("number").value;
+            submitOK = "true"
+
+            //First name
+            const nameRegex = /^[A-Z][a-z]{1,}$/;
+
+            if (!nameRegex.test(fname)) {
+                alert("Invalid First Name. The first letter must be uppercase, followed by lowercase letters, with at least 2 characters total.");
+                submitOK = "false";
+            }
+
+            // last name 
+            if (lname.length <= 1) {
+                alert("Tool will not consider single alphabet as last name");
+                submitOK = "false";
+            }
+
+            // Example pattern: Starts with 3 letters, followed by 6 digits
+            const regNumberRegex = /^[0-9]{4}[A-Z]{2}[0-9]{2}$/;
+
+            if (!regNumberRegex.test(regno)) {
+                alert("Please enter a valid University Registration Number (e.g., 2026AB01).");
+                submitOK = "false";
+            }
+
+            // Email id
+            if (email == -1) {
+                alert("Not a valid e-mail!");
+                submitOK = "false";
+            }
+
+            // Regular expression for a 10-digit phone number
+            const phoneRegex = /^[0-9]{10}$/;
+
+            if (!phoneRegex.test(number)) {
+                alert("Please enter a valid 10-digit phone number.");
+                submitOK = "false";
+            }
+
+            if (submitOK == "false") {
+                return false;
+            }
+
+            if (submitOK == "true")
+                // Hide the form and show success message
+                document.getElementById("jobForm").style.display = "none";  // Hide the form
+            document.getElementById("successMessage").style.display = "block";  // Show success message
+
+            const now = new Date();
+            // get the current date and time as a string
+            const date = now.toLocaleString();
+
+            document.getElementById("date").innerHTML = date;
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            document.getElementById("res").innerHTML = `Dear ${fname} ${lname},`;
+
+            return true; // Allow form submission
+
+
+        }
+        // Function to reset the form and go back
+        function goBack() {
+            document.getElementById("jobForm").reset(); // Reset the form
+            document.getElementById("successMessage").style.display = "none"; // Hide success message
+            document.getElementById("jobForm").style.display = "block"; // Show the form again
+        }
+
+
+    </script>
+
+</body>
+
+</html>
